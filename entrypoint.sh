@@ -4,4 +4,4 @@
 #time=$(date)
 #echo "::set-output name=time::$time"
 
-echo "Hello World" 
+echo "Hello World"
