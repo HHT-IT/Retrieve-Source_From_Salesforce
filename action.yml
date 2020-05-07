@@ -3,7 +3,6 @@ description: 'Retrieve Source from Salesforce and Create a Pull Request with Cha
 inputs:
   repository:
     description: 'Repository name with owner. For example, actions/checkout'
-    default: HHT-IT/myhhtqa
   salesforce-sfdx-auth-url:
     description: >
       The Auth URL of the salesforce instance and user example: force://PlatformCLI::XXXXXXXXX_XXXXXXX@myhht.my.salesforce.com.
@@ -20,3 +19,7 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ salesforce-auth-url }}
+    - ${{ repo }}
+    - ${{ github-token }}
