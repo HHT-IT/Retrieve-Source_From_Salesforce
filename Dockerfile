@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM Alpine
+FROM alpine:3.7
 RUN apk add --no-cache bash
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
