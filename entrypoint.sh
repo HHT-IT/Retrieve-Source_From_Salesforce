@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello $1"
+echo "Hello {salesforce-sfdx-auth-url}"
 #time=$(date)
 #echo "::set-output name=time::$time"
 
