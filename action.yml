@@ -20,8 +20,12 @@ inputs:
   hello:
     description: test
     defualt: world
+  key2:
+    description: key2
+    defualt: galaxy
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.hello }}
+    - ${{ inputs.key2 }}
