@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-echo "Hello abc"
+echo "Hello $1"
 #time=$(date)
 #echo "::set-output name=time::$time"
 
