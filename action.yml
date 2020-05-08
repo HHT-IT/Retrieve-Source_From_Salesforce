@@ -27,5 +27,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.hello }}
+    - ${{ inputs.salesforce_sfdx_auth_url }}
     - ${{ inputs.key2 }}
