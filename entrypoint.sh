@@ -16,6 +16,7 @@ wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.
 mkdir sfdx-cli
 tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
 ./sfdx-cli/install
+sfdx -v
 echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
