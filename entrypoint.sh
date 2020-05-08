@@ -21,6 +21,10 @@ npm -v
 
 #Populate Auth, Passed in as first variable
 echo $2 > SFDX_URL.txt
+echo '$2'
+echo $2
+echo cat
+cat SFDX_URL.txt
 #cat SFDX_URL.txt
 #echo 'file list'
 ls
