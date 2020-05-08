@@ -1,6 +1,9 @@
 # Container image that runs your code
 FROM alpine:3.7
 RUN apk add --no-cache --upgrade bash
+RUN apk add --update nodejs nodejs-npm
+COPY . ./
+RUN npm install
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
