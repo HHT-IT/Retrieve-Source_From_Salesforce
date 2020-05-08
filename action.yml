@@ -3,9 +3,11 @@ description: 'Retrieve Source from Salesforce and Create a Pull Request with Cha
 inputs:
   repository:
     description: 'Repository name with owner. For example, actions/checkout'
+    defualt: 'repo'
   salesforce-sfdx-auth-url:
     description: >
       The Auth URL of the salesforce instance and user example: force://PlatformCLI::XXXXXXXXX_XXXXXXX@xxxx.my.salesforce.com.
+    defualt: 'auth-url'
   github-token:
     description: >
       Personal access token (PAT) used to fetch the repository. The PAT is configured
@@ -14,7 +16,8 @@ inputs:
       We recommend using a service account with the least permissions necessary.
       Also when generating a new PAT, select the least scopes necessary.
       [Learn more about creating and using encrypted secrets](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/creating-and-using-encrypted-secrets)
-    default: ${{ github.token }}
+    default: 'github-token'
+    
   
 runs:
   using: 'docker'
