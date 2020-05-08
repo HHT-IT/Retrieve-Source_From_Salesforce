@@ -12,12 +12,12 @@ node -v
 npm -v
 
 #Install Salesforce CLI 
-wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
-mkdir sfdx-cli
-tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
-./sfdx-cli/install
-sfdx -v
-echo salesforce cli install completed.
+#wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+#mkdir sfdx-cli
+#tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
+#./sfdx-cli/install
+#sfdx -v
+#echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
 #echo $2 > ./SFDX_URL.txt
@@ -25,6 +25,7 @@ echo salesforce cli install completed.
 
 
 #Auth Org and Retreive Source
+sfdx -v
 sfdx force:auth:sfdxurl:store -f $2 -a salesforce -d
 sfdx force:source:retrieve -u salesforce --verbose -m  \
   "AuraDefinitionBundle, \
