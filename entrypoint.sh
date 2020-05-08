@@ -29,6 +29,7 @@ cat SFDX_URL.txt
 #echo 'file list'
 ls
 
+nslookup google.com
 
 #Auth Org and Retreive Source
 sfdx -v
