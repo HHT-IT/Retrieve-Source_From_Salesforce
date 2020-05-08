@@ -29,7 +29,6 @@ cat SFDX_URL.txt
 #echo 'file list'
 ls
 
-ping google.com
 
 #Auth Org and Retreive Source
 sfdx -v
