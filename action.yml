@@ -4,7 +4,7 @@ inputs:
   repository:
     description: 'Repository name with owner. For example, actions/checkout'
     defualt: 'repo'
-  salesforce-sfdx-auth-url:
+  salesforce_sfdx_auth_url:
     description: >
       The Auth URL of the salesforce instance and user example: force://PlatformCLI::XXXXXXXXX_XXXXXXX@xxxx.my.salesforce.com.
     defualt: 'auth-url'
@@ -21,4 +21,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.salesforce-sfdx-auth-url }}
+    - ${{ inputs.salesforce_sfdx_auth_url }}
