@@ -5,6 +5,7 @@
 #echo "::set-output name=time::$time"
 echo "hello"
 echo $1
+echo $2
 
 echo "Hello World"
 
