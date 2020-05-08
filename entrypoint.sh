@@ -26,7 +26,7 @@ cat ./SFDX_URL.txt
 
 #Auth Org and Retreive Source
 sfdx -v
-sfdx force:auth:sfdxurl:store -f $2 -a salesforce -d
+sfdx force:auth:sfdxurl:store -f ./SFDX_URL.txt -a salesforce -d
 sfdx force:source:retrieve -u salesforce --verbose -m  \
   "AuraDefinitionBundle, \
   BrandingSet, \
