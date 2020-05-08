@@ -1,6 +1,6 @@
 # Container image that runs your code
-FROM node:alpine
-RUN apk add --no-cache --upgrade bash
+FROM ubuntu:18.04
+#RUN apk add --no-cache --upgrade bash
 #RUN apk add -update --no-cache git openssh ca-certificates openssl jq gettext xmlstarlet curl
 
 RUN npm install sfdx-cli --global
