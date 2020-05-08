@@ -4,7 +4,7 @@
 #time=$(date)
 #echo "::set-output name=time::$time"
 echo "hello"
-echo ${{ env.INPUT_HELLO }}
+echo $1
 
 echo "Hello World"
 
