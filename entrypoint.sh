@@ -14,8 +14,8 @@ tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
 echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
-echo $2 > ./SFDX_URL.txt
-echo ./SFDX_URL.txt
+#echo $2 > ./SFDX_URL.txt
+#echo ./SFDX_URL.txt
 
 
 #Auth Org and Retreive Source
@@ -57,4 +57,4 @@ sfdx force:source:retrieve -u salesforce --verbose -m  \
   WorkflowAlert
   "
   #Remove Auth File
-  rm -f ./SFDX_URL.txt
+  #rm -f ./SFDX_URL.txt
