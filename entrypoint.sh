@@ -56,5 +56,8 @@ sfdx force:source:retrieve -u salesforce --verbose -m  \
   WebLink, \
   WorkflowAlert
   "
+  
+  ls 
+  
   #Remove Auth File
   #rm -f ./SFDX_URL.txt
