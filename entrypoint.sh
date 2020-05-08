@@ -6,6 +6,11 @@
 
 echo "Hello World"
 
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+nvm install node
+node -v
+npm -v
+
 #Install Salesforce CLI 
 wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 mkdir sfdx-cli
