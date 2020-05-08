@@ -1,5 +1,9 @@
 # Container image that runs your code
 FROM ubuntu:18.04
+USER root
+RUN apt-get update && apt-get install curl -y
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get update && apt-get upgrade -y && apt-get install nodejs -y
 #RUN apk add --no-cache --upgrade bash
 #RUN apk add -update --no-cache git openssh ca-certificates openssl jq gettext xmlstarlet curl
 
