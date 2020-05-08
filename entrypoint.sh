@@ -3,6 +3,8 @@
 #echo "Hello {salesforce-sfdx-auth-url}"
 #time=$(date)
 #echo "::set-output name=time::$time"
+echo "hello"
+echo ${{ env.INPUT_SALESFORCE-SFDX-AUTH-URL }}
 
 echo "Hello World"
 
