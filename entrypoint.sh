@@ -20,13 +20,15 @@ npm -v
 #echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
-echo $2 > ./SFDX_URL.txt
-cat ./SFDX_URL.txt
+echo $2 > SFDX_URL.txt
+cat SFDX_URL.txt
+echo 'file list'
+ls
 
 
 #Auth Org and Retreive Source
 sfdx -v
-sfdx force:auth:sfdxurl:store -f ./SFDX_URL.txt -a salesforce -d
+sfdx force:auth:sfdxurl:store -f SFDX_URL.txt -a salesforce -d
 sfdx force:source:retrieve -u salesforce --verbose -m  \
   "AuraDefinitionBundle, \
   BrandingSet, \
