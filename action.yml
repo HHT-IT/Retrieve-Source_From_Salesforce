@@ -20,6 +20,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ salesforce-auth-url }}
-    - ${{ repo }}
-    - ${{ github-token }}
+    - ${{ inputs.salesforce-sfdx-auth-url }}
+    - ${{ inputs.repository }}
+    - ${{ inputs.github-token }}
