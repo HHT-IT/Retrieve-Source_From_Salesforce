@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM alpine:3.7
+FROM node:alpine
 RUN apk add --no-cache --upgrade bash
 RUN apk add --update nodejs nodejs-npm
 COPY . ./
