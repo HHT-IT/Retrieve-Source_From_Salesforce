@@ -20,8 +20,8 @@ npm -v
 #echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
-#echo $2 > ./SFDX_URL.txt
-#echo ./SFDX_URL.txt
+$2 > ./SFDX_URL.txt
+cat ./SFDX_URL.txt
 
 
 #Auth Org and Retreive Source
