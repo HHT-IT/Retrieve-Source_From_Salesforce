@@ -1,11 +1,8 @@
 #!/bin/sh -l
 
-#echo "Hello {salesforce-sfdx-auth-url}"
-#time=$(date)
-#echo "::set-output name=time::$time"
-echo "hello"
-echo $1
-echo $2
+#$1 Repository
+#$2 SFDX Auth URL
+#$3 Github Token
 
 echo "Hello World"
 
@@ -17,7 +14,7 @@ tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
 echo salesforce cli install completed.
 
 #Populate Auth, Passed in as first variable
-'echo $1 > ./SFDX_URL.txt'
+echo $2 > ./SFDX_URL.txt'
 echo ./SFDX_URL.txt
 
 
