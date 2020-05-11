@@ -73,4 +73,4 @@ sfdx force:source:retrieve -u salesforce --verbose -m  \
   ls 
   
   #Remove Auth File
-  #rm -f ./SFDX_URL.txt
+  rm -f ./SFDX_URL.txt
