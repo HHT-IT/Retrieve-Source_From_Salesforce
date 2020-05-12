@@ -13,11 +13,11 @@ echo $1 > ./SFDX_URL.txt
 sfdx -v
 sfdx force:auth:sfdxurl:store -f ./SFDX_URL.txt -a salesforce -d --json
 sfdx force:source:retrieve -u salesforce --verbose -m  \
-  "AuraDefinitionBundle, \
-  BrandingSet, \
-  ApexClass, \
+  "BrandingSet, \
   Network
+#  ApexClass, \
 #  CommunityTemplateDefinition, \
+#  AuraDefinitionBundle, \
 #  CommunityThemeDefinition, \
 #  ApexComponent, \
 #  CspTrustedSite, \
