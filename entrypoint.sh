@@ -15,7 +15,8 @@ sfdx force:auth:sfdxurl:store -f ./SFDX_URL.txt -a salesforce -d --json
 sfdx force:source:retrieve -u salesforce --verbose -m  \
   "AuraDefinitionBundle, \
   BrandingSet, \
-  ApexClass 
+  ApexClass, \
+  Network
 #  CommunityTemplateDefinition, \
 #  CommunityThemeDefinition, \
 #  ApexComponent, \
@@ -25,7 +26,6 @@ sfdx force:source:retrieve -u salesforce --verbose -m  \
 #  Document:myhht_com_Customer_Portal_Branding/cp_header, \
 #  FlexiPage, \
 #  LightningComponentBundle, \
-#  Network, \
 #  CustomObject, \
 #  ApexPage, \
 #  ApexTestSuite, \
