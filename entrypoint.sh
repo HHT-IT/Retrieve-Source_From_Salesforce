@@ -14,39 +14,39 @@ sfdx -v
 sfdx force:auth:sfdxurl:store -f ./SFDX_URL.txt -a salesforce -d --json
 sfdx force:source:retrieve -u salesforce --verbose -m  \
   "BrandingSet, \
-   CustomObject
-#  Network
-#  ApexClass, \
-#  CommunityTemplateDefinition, \
-#  AuraDefinitionBundle, \
-#  CommunityThemeDefinition, \
-#  ApexComponent, \
-#  CspTrustedSite, \
-#  CustomMetadata, \
-#  Document:myhht_com_Customer_Portal_Branding/cp_footer, \
-#  Document:myhht_com_Customer_Portal_Branding/cp_header, \
-#  FlexiPage, \
-#  LightningComponentBundle, \
-#  ApexPage, \
-#  ApexTestSuite, \
-#  PermissionSet, \
-#  CustomSite, \
-#  StaticResource, \
-#  ApexTrigger, \
-#  Layout, \
-#  SharingRules, \
-#  ApprovalProcess, \
-#  CustomField, \
-#  CustomPermission, \
-#  CustomTab, \
-#  EmailTemplate, \
-#  Flow, \
-#  Profile, \
-#  RecordType, \
-#  StandardValueSet, \
-#  ValidationRule, \
-#  WebLink, \
-#  WorkflowAlert
+   CustomObject, \
+   Network, \
+   ApexClass, \
+   CommunityTemplateDefinition, \
+   AuraDefinitionBundle, \
+   CommunityThemeDefinition, \
+   ApexComponent, \
+   CspTrustedSite, \
+   CustomMetadata, \
+   Document:myhht_com_Customer_Portal_Branding/cp_footer, \
+   Document:myhht_com_Customer_Portal_Branding/cp_header, \
+   FlexiPage, \
+   LightningComponentBundle, \
+   ApexPage, \
+   ApexTestSuite, \
+   PermissionSet, \
+   CustomSite, \
+   StaticResource, \
+   ApexTrigger, \
+   Layout, \
+   SharingRules, \
+   ApprovalProcess, \
+   CustomField, \
+   CustomPermission, \
+   CustomTab, \
+   EmailTemplate, \
+   Flow, \
+   Profile, \
+   RecordType, \
+   StandardValueSet, \
+   ValidationRule, \
+   WebLink, \
+   WorkflowAlert
   "
   
 ls 
